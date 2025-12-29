@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test:e2e": "playwright test --config=playwright.config.cjs --browser=chromium",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.40.0",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
@@ -23,6 +25,11 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "dependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
